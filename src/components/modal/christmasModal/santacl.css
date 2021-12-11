@@ -1,0 +1,9 @@
+#santa-left-hand {
+  transform-origin: 90% 125%;
+  animation: Swave 2s infinite ease;
+}
+@keyframes Swave {
+  50% {
+    transform: rotate(2.5deg);
+  }
+}

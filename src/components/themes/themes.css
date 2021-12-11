@@ -1,0 +1,22 @@
+:root {
+  --backgrColor: 13, 24, 38;
+  --backgrColorLight: 17, 32, 51;
+  --colorPrimary: 18, 111, 252;
+  --colorSecondary: 33, 114, 235;
+  --white: 255, 255, 255;
+  --gradient-1: #7430ce;
+  --gradient-2: #117ed3;
+  --logo: #357aef;
+  --monitorWidth: calc(100vw * 0.75);
+  --mobileWidth: calc(100vw * 0.9);
+}
+[data-theme="christmas"] {
+  --backgrColor: 0, 32, 44;
+  --backgrColorLight: 0, 45, 61;
+  --colorPrimary: 255, 58, 74;
+  --colorSecondary: 58, 185, 163;
+  --white: 255, 255, 255;
+  --gradient-1: #fc0442;
+  --gradient-2: #01bb9c;
+  --logo: #00c4a3d3;
+}

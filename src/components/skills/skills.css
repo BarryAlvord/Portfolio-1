@@ -1,0 +1,160 @@
+.skills-container {
+  width: var(--mobileWidth);
+  margin: auto;
+}
+
+.skills {
+  width: 100%;
+  margin: auto;
+}
+.skills ul {
+  list-style-type: none;
+}
+
+.skills li {
+  width: 100%;
+}
+
+.circleContainer {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin: 5px 0px;
+}
+.singleChart {
+  display: flex;
+  width: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.circularChart {
+  display: block;
+  width: 40%;
+  height: 170px;
+  transition: 0.4s ease;
+}
+
+.circleBg {
+  fill: none;
+  stroke: rgba(var(--white), 0.5);
+  stroke-width: 4.1;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke: rgb(var(--colorSecondary));
+  transition: 0.6s ease;
+}
+
+.percentage {
+  fill: rgba(var(--white), 0.8);
+  font-family: sans-serif;
+  font-size: 0.3em;
+  text-anchor: middle;
+}
+
+.circleTitle {
+  width: 35%;
+  font-size: 20px;
+}
+
+i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .skills-container {
+    height: 88vh;
+    width: var(--monitorWidth);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .skills li {
+    width: 25%;
+  }
+  .circleContainer {
+    display: block;
+  }
+
+  .singleChart {
+    all: unset;
+    width: 30%;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    transition: 0.6s ease;
+  }
+
+  .circularChart {
+    display: block;
+    margin: 10px auto;
+    width: 12.5vw;
+    height: fit-content;
+    border-radius: 50%;
+    transition: 0.6s ease;
+  }
+
+  .circularChart:hover {
+    box-shadow: 0px 0px 30px 0px rgb(var(--colorSecondary));
+  }
+
+  .circleBg {
+    fill: none;
+    stroke: rgba(var(--white), 0.4);
+    stroke-width: 4.1;
+  }
+
+  .circle {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke: rgb(var(--colorPrimary));
+    transition: 0.8s ease;
+  }
+
+  .circularChart:hover .circle {
+    stroke-width: 4.1;
+    stroke: rgb(var(--colorSecondary));
+  }
+
+  .percentage {
+    text-anchor: middle;
+  }
+
+  .circleTitle {
+    width: 100%;
+    margin: auto;
+    font-size: 25px;
+  }
+  i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,46 @@
+.footer-container {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: var(--mobileWidth);
+  font-size: 12px;
+  padding: 10px 0 20px 0;
+  color: rgba(var(--white), 0.4);
+  text-transform: capitalize;
+  font-family: "Space Mono";
+}
+
+.footer-container::before {
+  margin: auto;
+  margin-bottom: 12px;
+  content: "";
+  display: block;
+  width: 300px;
+  height: 2px;
+  background-color: rgba(var(--white), 0.5);
+}
+@media screen and (min-width: 800px) {
+  .footer-container {
+    width: var(--monitorWidth);
+    line-height: 18px;
+    padding: 22px 0 20px 0;
+  }
+
+  .footer-container::before {
+    width: 600px;
+  }
+}
+
+#bi {
+  color: rgb(var(--colorPrimary));
+}
+
+#reactjs {
+  color: #00ddfb;
+}
+#britt {
+  color: #64ffda;
+}
+#saveur {
+  color: #7ca9df;
+}

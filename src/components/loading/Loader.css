@@ -1,0 +1,32 @@
+.loader-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.loader {
+  display: block;
+  max-height: 280px;
+  border-radius: 100%;
+}
+.loaderBg {
+  fill: none;
+  stroke: black;
+  stroke-width: 4.1;
+}
+.loaderStroke {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 0, 100;
+  animation: load 3s linear forwards;
+}
+
+@keyframes load {
+  to {
+    stroke-dasharray: 100, 100;
+  }
+}

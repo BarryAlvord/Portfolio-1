@@ -1,0 +1,11 @@
+.logo {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.logo svg {
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nanum+Gothic&family=Nunito&family=Open+Sans&family=Parisienne&family=Space+Mono&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--white), 0.2);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: white;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--backgrColor));
+  border: 2px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+body {
+  position: relative;
+  margin: 0;
+  color: white;
+  background-color: rgb(var(--backgrColor));
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  position: relative;
+}
+button {
+  color: white;
+  cursor: pointer;
+}
+
+#title {
+  font-size: 26px;
+  width: 100%;
+  padding: 0 5px 10px;
+}
+
+#title span {
+  color: rgb(var(--colorSecondary));
+  padding-right: 5px;
+}
+main {
+  opacity: 0;
+  transition: opacity 2.8s ease-out;
+}
+.hightLight {
+  color: rgb(var(--colorPrimary));
+  font-family: monospace;
+}
+.icon {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+* {
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  #title {
+    font-size: 36px;
+    margin: 0 0 20px;
+  }
+}

@@ -1,0 +1,39 @@
+.switcher {
+  padding: 4px 4px;
+  background-color: rgba(var(--backgrColor), 0.7);
+  border: 1px solid rgba(var(--white), 0.7);
+  border-radius: 5px;
+  transition: right 0.7s ease;
+}
+
+.switcher button {
+  width: 25px;
+  height: 25px;
+  margin: 0 2px;
+  text-align: center;
+  color: rgba(var(--white), 0.7);
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.active {
+  color: rgba(var(--colorSecondary), 0.7);
+}
+
+@media screen and (min-width: 800px) {
+  .switcher {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(var(--backgrColor), 0.7);
+    border: 1px solid rgba(var(--white), 0.7);
+    transition: left 0.7s ease;
+  }
+  .switcher button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}

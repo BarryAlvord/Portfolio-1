@@ -1,0 +1,12 @@
+.light:nth-child(even) {
+  animation: flash 1s linear infinite alternate;
+}
+.light:nth-child(odd) {
+  animation: flash 1s 1s linear infinite alternate;
+}
+@keyframes flash {
+  100% {
+    fill: rgb(255, 255, 255);
+    opacity: 0.5;
+  }
+}

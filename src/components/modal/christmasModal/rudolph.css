@@ -1,0 +1,9 @@
+#rudolph-left-hand {
+  transform-origin: 100% 110%;
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+  50% {
+    transform: rotate(14deg);
+  }
+}

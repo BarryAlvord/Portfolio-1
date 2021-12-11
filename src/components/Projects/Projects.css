@@ -1,0 +1,285 @@
+.projects-container {
+  position: relative;
+  width: var(--mobileWidth);
+  margin: auto;
+  overflow: hidden;
+}
+.projects-content {
+  display: flex;
+  flex-direction: column;
+}
+.projects {
+  padding: 2px;
+  width: 100%;
+}
+.projectLoad,
+.noProject {
+  height: 50vh;
+  text-align: center;
+  padding: 70px 0 0 0;
+}
+
+.projectLoad h2,
+.noProject h2 {
+  margin: auto;
+  width: fit-content;
+  font-size: 25px;
+  font-family: monospace;
+  color: rgb(var(--white), 0.5);
+  letter-spacing: 1px;
+}
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProjectsTitle {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.ProjectsTitle .line {
+  height: 1px;
+  flex: 1;
+  background-color: rgb(var(--white), 0.5);
+}
+.ProjectsTitle h2 {
+  padding: 0 0.5rem;
+  font-size: 22px;
+  color: rgb(var(--colorSecondary), 0.8);
+}
+.projectsHighlight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+.projectHL {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(var(--backgrColorLight));
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  width: 80%;
+  height: 260px;
+  border-radius: 10px;
+}
+.projectHLBg {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+.projectHLDetail {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 0;
+}
+
+.projectHLDetail h3 {
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: center;
+  transition: color 0.5s ease;
+}
+.projectHLDes {
+  padding: 5px;
+}
+.projectHLDes p {
+  font-size: 16px;
+  color: rgb(var(--white), 0.8);
+}
+.projectHLTagIcon {
+  color: rgb(var(--colorSecondary));
+}
+.projectHLTag li {
+  display: inline-block;
+  margin: 0 4px 0 4px;
+  text-transform: capitalize;
+  color: rgb(var(--white), 0.7);
+  font-size: 12.5px;
+  font-family: monospace;
+}
+.otherProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  gap: 10px;
+}
+.otherProjects-container {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+.otherProjects button {
+  background-color: transparent;
+  width: fit-content;
+  font-size: 15px;
+  font-family: monospace;
+  text-transform: capitalize;
+  border: 2px solid rgb(var(--colorSecondary), 0.9);
+  border-radius: 6px;
+  color: rgb(var(--colorSecondary));
+  padding: 6px;
+  transition: 0.5s ease;
+}
+.projectWL {
+  position: relative;
+  padding: 18px 12px 18px 12px;
+  border: 2px solid rgb(var(--colorSecondary), 0.6);
+  border-radius: 4px;
+  background-color: rgb(var(--backgrColorLight), 1);
+  cursor: pointer;
+  top: 0;
+  transition: 0.6s ease;
+}
+.projectWLTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProjectWLFolder {
+  font-size: 30px;
+  color: rgb(var(--colorPrimary));
+}
+.ProjectWLExternal {
+  color: rgb(var(--white), 0.6);
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+.projectWLTitle h3 {
+  font-size: 20px;
+  font-family: Nunito;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.projectWLTag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.projectWLTag li {
+  text-transform: capitalize;
+  color: rgb(var(--white), 0.6);
+}
+.projectWLDes {
+  margin: 10px 0 0;
+}
+.projectWLDes p {
+  font-size: 14px;
+  font-family: "Merriweather";
+  color: rgb(var(--white), 0.8);
+}
+.fadeIN {
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .projects-container {
+    width: var(--monitorWidth);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .noProject h2 {
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .noProject h2:hover {
+    color: rgb(var(--colorSecondary), 0.8);
+  }
+  .ProjectsTitle {
+    width: 60%;
+  }
+  .ProjectsTitle h2 {
+    font-size: 30px;
+  }
+  .projectsHighlight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .projectHL {
+    width: 25%;
+    height: 305px;
+  }
+
+  .projectHL:hover .projectHLBg {
+    transform: scale(1.4);
+  }
+  .projectHL:hover .projectHLDetail h3 {
+    color: rgb(var(--colorSecondary));
+  }
+  .projectHLDetail h3 {
+    font-size: 25px;
+  }
+
+  .projectHLDes p {
+    font-size: 20px;
+  }
+
+  .projectHLTag li {
+    font-size: 14px;
+  }
+  .otherProjects {
+    padding: 20px;
+    gap: 10px;
+  }
+  .otherProjects-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    gap: 15px;
+  }
+  .otherProjects button {
+    font-size: 20px;
+  }
+  .otherProjects button:hover {
+    background-color: rgb(var(--colorSecondary), 0.5);
+  }
+
+  .projectWL {
+    position: relative;
+    padding: 10px 12px;
+  }
+  .projectWL:hover {
+    top: -10px;
+  }
+  .projectWL:hover .projectWLTitle {
+    color: rgb(var(--colorSecondary));
+  }
+  .ProjectWLExternal:hover {
+    color: rgb(var(--colorSecondary));
+  }
+  .ProjectWLFolder {
+    font-size: 41px;
+  }
+  .projectWLTitle h3 {
+    font-size: 22px;
+  }
+
+  .projectWLDes p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,188 @@
+.christmasHeader {
+  position: relative;
+}
+.ChirstmasLight {
+  position: absolute;
+  top: -22px;
+  width: 500px;
+  z-index: 3;
+}
+.christmasHeader h1 {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  z-index: 0;
+}
+.christmasHeader h2 {
+  margin: 52px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Merriweather";
+  z-index: 1;
+}
+.christmasBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0 0 0;
+}
+.christmasCountdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.christmasCountdown article {
+  margin: 4px;
+}
+.christmasCountdown p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #64b646;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  font-size: 35px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.closeChristmas p {
+  background-color: rgb(202, 50, 50);
+}
+.christmasCountdown h3 {
+  font-size: 12px;
+  font-family: "Nunito";
+  text-transform: uppercase;
+}
+.christmasBody h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: "Parisienne";
+  color: #ffe2af;
+}
+.christmasFooter {
+  position: absolute;
+  display: flex;
+  top: 247px;
+  left: 0;
+  right: 0;
+}
+.snowMan {
+  margin: auto 0 0 0px;
+  width: 70px;
+  height: 70px;
+}
+.right {
+  margin: auto 0px 0 0;
+}
+.christmasTree {
+  width: 100px;
+  margin: auto;
+}
+.figures {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.santa {
+  width: 90px;
+  height: fit-content;
+}
+.rudolph {
+  width: 95px;
+  height: fit-content;
+}
+#merry {
+  font-size: 35px;
+  font-family: "Merriweather";
+  font-style: oblique;
+  text-transform: uppercase;
+  z-index: 2;
+  color: #ebdf89;
+}
+#christ {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 14px;
+  font-family: "Parisienne";
+  font-size: 70px;
+  font-weight: 200;
+  text-transform: capitalize;
+  padding-top: -100em;
+  color: #efe072;
+  z-index: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .ChirstmasLight {
+    width: 1248px;
+    height: 90px;
+    top: -52px;
+  }
+  .christmasHeader h2 {
+    font-size: 20px;
+  }
+  .christmasBody {
+    padding: 30px 0 0 0;
+  }
+  .christmasCountdown article {
+    margin: 10px;
+  }
+  .christmasCountdown p {
+    padding: 20px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+  .christmasCountdown h3 {
+    font-size: 16px;
+  }
+  .christmasBody h2 {
+    font-size: 35px;
+  }
+  .christmasFooter {
+    top: 339px;
+  }
+  .snowMan {
+    margin: auto 0 0 80px;
+    width: 150px;
+    height: 150px;
+  }
+  .right {
+    margin: auto 80px 0 0;
+  }
+  .christmasTree {
+    width: 190px;
+  }
+  .santa {
+    width: 175px;
+    right: 270px;
+    bottom: 6px;
+  }
+  .rudolph {
+    left: 296px;
+    bottom: 10px;
+    width: 150px;
+  }
+  #merry {
+    font-size: 50px;
+  }
+  #christ {
+    font-size: 98px;
+  }
+}

@@ -1,0 +1,28 @@
+.shadow-2 {
+  animation: blink-1 6s 1s infinite;
+}
+.shadow-1 {
+  animation: blink-2 2s 0.5s infinite;
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.45;
+  }
+}
+@keyframes blink-1 {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

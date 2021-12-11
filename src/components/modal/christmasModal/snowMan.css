@@ -1,0 +1,147 @@
+#svg_snowman {
+  animation-delay: 10s;
+  animation: bouncing 2s 5s infinite ease-in-out;
+}
+.snowman_body {
+  animation: body-drop 0.5s ease-in forwards;
+  -webkit-animation: body-drop 0.5s ease-in forwards;
+}
+
+.scarf {
+  opacity: 0;
+  -webkit-animation: scale 0.5s ease 1s forwards;
+  -webkit-transform-origin: 55px 165px;
+}
+
+.scarf_knot {
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 1.5s forwards;
+  -webkit-transform-origin: 92px 190px;
+}
+
+.snowman_head {
+  -webkit-transform: translateY(-303px);
+  -webkit-animation: body-drop 0.5s ease-in 0.2s forwards;
+}
+
+#hat {
+  -webkit-transform: translateY(-303px);
+  -webkit-animation: body-drop 0.5s ease-in 0.3s forwards;
+}
+
+.nose {
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2.5s forwards;
+  -webkit-transform-origin: 104px 142px;
+}
+
+.mouth-1 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.1s forwards;
+  -webkit-transform-origin: 82px 156px;
+}
+
+.mouth-2 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.2s forwards;
+  -webkit-transform-origin: 86px 162px;
+}
+
+.mouth-3 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.3s forwards;
+  -webkit-transform-origin: 92px 167px;
+}
+
+.mouth-4 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.4s forwards;
+  -webkit-transform-origin: 98px 169px;
+}
+
+.mouth-5 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.5s forwards;
+  -webkit-transform-origin: 106px 171px;
+}
+
+.mouth-6 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.6s forwards;
+  -webkit-transform-origin: 113px 171px;
+}
+
+.mouth-7 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.7s forwards;
+  -webkit-transform-origin: 120px 171px;
+}
+
+.mouth-8 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.8s forwards;
+  -webkit-transform-origin: 127px 169px;
+}
+
+.mouth-9 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.9s forwards;
+  -webkit-transform-origin: 132px 165px;
+}
+
+.mouth-10 {
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 4s forwards;
+  -webkit-transform-origin: 137px 160px;
+}
+
+.eye_left {
+  opacity: 0;
+  -webkit-animation: scale 0.2s ease 2.7s forwards;
+  -webkit-transform-origin: 92px 122px;
+}
+
+.eye_right {
+  opacity: 0;
+  -webkit-animation: scale 0.2s ease 2.9s forwards;
+  -webkit-transform-origin: 125px 120px;
+}
+
+.button_top {
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2.2s forwards;
+  -webkit-transform-origin: 132px 217px;
+}
+
+.button_bottom {
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2s forwards;
+  -webkit-transform-origin: 132px 252px;
+}
+
+@keyframes body-drop {
+  0% {
+    -webkit-transform: translateY(-200px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+  }
+}
+@keyframes bouncing {
+  50% {
+    transform: translateY(-50px);
+  }
+}
