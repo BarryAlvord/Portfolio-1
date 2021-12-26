@@ -13,7 +13,7 @@ export default function useScheduleTheme(setTheme) {
         return true;
       }
       if (new Date(item.end).getTime() <= today) {
-        setTheme((prev) => ({ prevTheme: prev.name, name: "default" }));
+        setTheme({ prevTheme: null, name: "default" });
         return true;
       } else return false;
     });
