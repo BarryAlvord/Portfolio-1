@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Parisienne&display=swap");
 .christmasHeader {
   position: relative;
 }
@@ -33,6 +34,40 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  padding: 5px 0 0 0;
+  height: 100%;
+}
+.itsChristmas {
+  position: relative;
+  margin-top: 20px;
+  line-height: 50px;
+  font-size: 22px;
+  font-family: "Pacifico";
+}
+.itsChristmas #holy {
+  position: absolute;
+  top: -23px;
+  left: -40px;
+  width: 50px;
+  z-index: 3;
+}
+.itsChristmas #candycane {
+  position: absolute;
+  width: 28px;
+  bottom: -8px;
+  right: -22px;
+  transform: scaleX(-1) rotate(-45deg);
+}
+
+.christmasCountdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.christmasCountdown div {
+  display: flex;
+  gap: 12px;
 }
 .christmasCountdown article {
   margin: 4px;
@@ -59,6 +94,7 @@
   text-transform: uppercase;
 }
 .christmasBody h2 {
+  display: block;
   font-size: 22px;
   text-transform: capitalize;
   font-family: "Parisienne";
@@ -139,6 +175,26 @@
   .christmasBody {
     padding: 30px 0 0 0;
   }
+
+  .itsChristmas {
+    margin-top: 10px;
+    font-size: 32px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: rgb(var());
+  }
+  .itsChristmas #holy {
+    top: -55px;
+    left: -68px;
+    width: 90px;
+    height: 90px;
+  }
+  .itsChristmas #candycane {
+    width: 35px;
+    bottom: -10px;
+    right: -28px;
+  }
+
   .christmasCountdown article {
     margin: 10px;
   }
