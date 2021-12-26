@@ -21,7 +21,7 @@ export const themeList = [
   {
     id: 2,
     start: `December 1, ${new Date().getUTCFullYear()} 00:00:00`,
-    end: `December 25, ${new Date().getUTCFullYear()} 00:00:00`,
+    end: `December 26, ${new Date().getUTCFullYear()} 00:00:00`,
     name: "christmas",
     icon: <FaGifts />,
     emoj: "🎄",
